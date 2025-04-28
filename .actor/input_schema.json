@@ -1,0 +1,29 @@
+{
+  "title": "google news",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "trend": {
+      "title": "Search Query",
+      "type": "string",
+      "description": "Parameter is used for retrieving different market trends. Available options:\n`indexes` - Market indexes\n`most-active` - Most active\n`gainers` - Gainers\n`losers` - Losers\n`climate-leaders` - Climate leaders\n`cryptocurrencies` - Crypto\n`currencies` - Currencies\n\n",
+      "editor": "textfield",
+      "prefill": "indexes"
+    },
+    "hl": {
+      "title": "Language",
+      "type": "string",
+      "description": "Parameter defines the language to use for the Google search. It's a two-letter language code. (e.g., `en` for English, `es` for Spanish, or `fr` for French).",
+      "editor": "textfield",
+      "prefill": "en"
+    },
+    "gl": {
+      "title": "Country",
+      "type": "string",
+      "description": "Parameter defines the country to use for the Google search. It's a two-letter country code. (e.g., `us` for the United States, `uk` for United Kingdom, or `fr` for France).",
+      "editor": "textfield",
+      "prefill": "us"
+    }
+  },
+  "required": ["q"]
+}
